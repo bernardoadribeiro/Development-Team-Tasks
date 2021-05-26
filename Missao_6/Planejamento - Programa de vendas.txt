@@ -1,0 +1,47 @@
+Programa de vendas de Supermercado
+
+1- Cadastro dos produtos
+    ID(4 casas), Descrição, qtd_estoque, Preço_unitario
+
+    possivel feature: if(prod tem validade) scanf data_validade
+                      if(data_atual > data_validade) printf prod. vencido, cadastre outro
+
+
+2- Realizar venda
+    while(repete){
+        lê ID; e imprime: Produto.descrição e Produto.qtd_estoque
+        while(1){
+            lê Quantidade;
+              if(qtd > qtd_estoque){
+                if(qtd_estoque==0) printf produto sem estoque; break;
+              }else if(qtd>0 && qtd>produto.qtd_estoque) printf Produto com estoque insuficiente.Digite novamente..
+                else break;
+        }
+        valor_total = valor_total + (produto.id.preço*qtd)
+        printf Deseja incluir mais produtos?
+        if(resp==1) repete=1;
+        else repete=0; break;
+    }
+
+    modelo de impressao:
+    Informe o codigo do produto: 65
+        Descrição              qtd estoque   valor    validade(talvez)  
+    >>> leite longa vida uht        5        R$3.60    xx/xx/xxxx
+    >>> Total da compra: R$xxx
+    Deseja outro produto? 1 sim, 0 nao
+    if(nao) printf TOTAL DA VENDA: R$292,79
+    
+    dps inicia uma nova venda
+    caso nao tenha mais vendas, segue o passo 3 abaixo
+     
+
+3- Fechamento de caixa
+    imprime: produtos vendidos, qtd_vendido, valor total de cada prod vendido,
+             TOTAL_GERAL de vendas;
+
+    (alt) imprime: relação de vendas
+                    faturamento do dia
+    
+    imprime: mensagem de encerramento.
+    imprime: "nota_fiscal.txt"   (http://linguagemc.com.br/arquivos-em-c-categoria-usando-arquivos)
+

@@ -1,0 +1,46 @@
+MISSÃO EXTRA DA SEMANA
+
+=MINI POKER=
+
+Um Baralho possui 52 cartas,e cada carta possui, no mínimo, a informação de NÚMERO (valor entre 1 e 13), e NAIPE (cujo valores são: @, #, $ ou &).
+
+O programa deve garantir que a mesma carta não seja sorteada duas vezes. (Pois só existe um baralho).
+
+Ao início da execução, o programa deve perguntar quantos jogadores irão participar. (mínimo de 2 e máximo de 10). 
+
+Após o sorteio, o programa deve imprimir as cartas de cada jogador ordenadas pelo seu NÚMERO.
+
+O programa também deve informar a classificação do jogo, considerando as seguintes regras de pontuação:
+-Quatro cartas com NÚMEROS distintos entre si: 5 Pontos;
+-Quatro cartas com NAIPES distintos entre si: 10 Pontos;
+-Quatro cartas em SEQUENCIA numérica (p.ex.: 3,4,5,6 ou 8,9,10,11): 15 pontos;
+-Quatro cartas com NÚMEROS identicos: 20 Pontos;
+
+Em caso de empate em pontos, o critério de desempate é a MAIOR SOMA dos NÚMEROS das cartas.
+
+> Atenção! Ainda não é permitido o uso de funções/procedimentos. Apenas a função main().
+> Dica: Inicializar o baralho com as 52 cartas no início do programa ;-)
+
+Baralho cartas[52] = {  "[A@]", "[2@]","[3@]", "[4@]", "[5@]", "[6@]", "[7@]", "[8@]", "[9@]", "[10@]", "[J@]", "[Q@]", "[K@]",
+							"[A#]", "[2#]","[3#]", "[4#]", "[5#]", "[6#]", "[7#]", "[8#]", "[9#]", "[10#]", "[J#]", "[Q#]", "[K#]",
+							"[A$]", "[2$]","[3$]", "[4$]", "[5$]", "[6$]", "[7$]", "[8$]", "[9$]", "[10$]", "[J$]", "[Q$]", "[K$]"
+							"[A&]", "[2&]","[3&]", "[4&]", "[5&]", "[6&]", "[7&]", "[8&]", "[9&]", "[10&]", "[J&]", "[Q&]", "[K&]"
+						 };
+						 
+
+
+
+
+
+______
+| %d%c               |
+|                          |
+|                          |
+|          %c           |
+|                          |
+|               %d%c |
+|_____|
+
+
+
+

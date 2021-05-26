@@ -1,0 +1,16 @@
+------------ IMPORTANTE ------------
+
+ *  EXECUTANDO EM AMBIENTE LINUX
+ * 	  Para que não haja erros de execução, antes de iniciar o jogo, instale este pacote pelo terminal:
+ *	   	  " sudo apt-get install figlet " (sem as aspas)
+ *    Feito isso, feche o terminal e ja pode iniciar o jogo.
+ * 
+ * EXECUTANDO EM OUTRO AMBIENTE
+ * 	  Este jogo poderá apresentar erros caso não seja executado no ambiente linux devido alguns 
+ * 	  comandos utilizados. Mas para que  isso não ocorra e ele funcione em outro OS diferente de Linux, 
+ * 	  basta remover ou comentar a linha onde tem: system("figlet Binary Phantoms");
+ * 
+ * 
+ * Divirta-se! :D
+ * 
+ * Developed by the team: Binary Phantoms.

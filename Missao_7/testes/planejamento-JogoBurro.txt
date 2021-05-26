@@ -1,0 +1,45 @@
+ordenar cartas pela situação
+
+
+usuario inicia
+   le cartaUser
+
+inicia laço:
+while{
+    cartaRodada = naipe[cartaUser];
+    cartaPC = cartaBot(cartaRodada); -> recebe o naipe da rodada, verifica se tem a carta de mesmo naipe da rodada; 
+                                                                  se nao tiver, compraCarta(cartas, jogadores)
+                                        se cartaRodada tem valor == -1, entao bot escolhe qualquer carta;
+
+    verificaCartas(cartaUser, cartaPC, cartaRodada) -> verifica qual a carta é maior e retorna o id_vencendor;
+          [na função verificaCartas] jogadores[].cartas_mao[cartaPC/User] = -1; -> tira as carta do jogo;
+                                     jogador[id_vencedor].score +=1
+           
+    cartaRodada = -1 -> reseta carta da rodada
+
+    do{
+        if(id_vencedor==0){
+            le cartaUser
+            le cartaPC
+        }
+        else if(id_vencedor==1){
+            cartaPC = cartaBot
+            le cartaUser
+        }
+        
+        verificaCartas(cartaUser, cartaPC, cartaRodada) -> verifica qual a carta é maior e retorna o id_vencendor
+            cartaRodada = -1 -> reseta carta da rodada
+
+        int OK = 0
+        for(percorre por todo baralho)
+            if existe cartas[].situacao == 0
+                OK+=1
+
+        if(OK==0) break;
+    }while(OK >= 1) (enquanto houver cartas com situacao=0)
+    
+    verificaPontuacao() = retorna id do vencedor
+        if id_vencedor == 0; Usuario ganhou
+        else PC ganhou
+            
+}
