@@ -13,5 +13,3 @@ Integrantes do time Binary Phantoms:
 Professor: Adriano Prates
 
 PS.: Pode ser que nem todos os arquivos estejam completamente funcionais, pois para realizar com exito as missões, foram tentativos e erros. Mas com empenho do time, conseguimos completar todas as missões com êxito e vencer a batalha entre os times de desenvolvimento da disciplina.
-
-...................................
